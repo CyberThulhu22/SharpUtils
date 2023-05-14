@@ -112,6 +112,10 @@ Uses DCOM methods to kick off a binary locally/remotely. (Binary must exist on D
     - SystemBrowserWindow
     - ExcelDDE
 
+**Uses DCOM**
+
+**Certain methods require administrative privileges on the remote host**
+
 #### Usage
 
 ```powershell
