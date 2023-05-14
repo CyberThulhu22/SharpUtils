@@ -103,6 +103,23 @@ create_process.exe <host> <full_path_to_exe_on_remote_host> <executable_argument
 
 ---
 
+### dcom_exec.exe
+
+Uses DCOM methods to kick off a binary locally/remotely. (Binary must exist on Disk)
+  - Supported Methods:
+    - SystemWindows (*Default Method)
+    - MMC (*Requires Elevation)
+    - SystemBrowserWindow
+    - ExcelDDE
+
+#### Usage
+
+```powershell
+dcom_exec.exe <-m <method> [-s system] -c <full_path_to_exe_on_host> [-a <arguments>] [-h]
+```
+
+---
+
 ### dsquery.exe
 
 Queries directory services (e.g., Active Directory). Only complex queries (dsquery *) are supported at this time, and the `-filter` option is required.

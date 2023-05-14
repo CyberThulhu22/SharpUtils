@@ -20,6 +20,10 @@ Write-Output "  [*] create_process.exe"
 C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe /t:exe /out:bin\create_process_3.5.exe create_process.cs | Select-String error
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:exe /out:bin\create_process_4.0.exe create_process.cs | Select-String error
 
+Write-Output "  [*] dcom_exec.exe"
+C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe /t:exe /out:bin\dcom_exec_3.5.exe dcom_exec.cs | Select-String error
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:exe /out:bin\dcom_exec_4.0.exe dcom_exec.cs | Select-String error
+
 Write-Output "  [*] driver_list.exe"
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:exe /out:bin\driver_list_4.0.exe driver_list.cs | Select-String error
 
