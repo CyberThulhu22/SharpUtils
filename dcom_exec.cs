@@ -1,3 +1,7 @@
+// To Compile:
+//   C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe /t:exe /out:dcom_exec.exe dcom_exec.cs
+//   C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /t:exe /out:dcom_exec.exe dcom_exec.cs
+
 using System;
 using System.IO;
 using System.Reflection;
